@@ -12,45 +12,46 @@ www.smartlab.ws
 Data is based on an experiment that tests the use of an accelerometer and a gyroscope on a Samsung smartphone. 
 The following signals are described here, though they are processed further before being included in the final dataset. 
 
-t vs. f tells if the variable measures time or frequency
-Acc vs. Gyro tells if variable measures accelerometer or gyroscope
-Body vs. Gravity tells type of motion for acceleration signal
-X,Y,or Z denotes the direction vector
+Each signal has these qualities:
+1. t vs. f tells if the variable measures time or frequency
+2. Acc vs. Gyro tells if variable measures accelerometer or gyroscope
+3. Body vs. Gravity tells type of motion for acceleration signal
+4. X,Y,or Z denotes the direction vector
 
 
-tBodyAcc-X
-tGravityAcc-X
-tBodyAccJerk-X
-tBodyGyro-X
-tBodyGyroJerk-X
-tBodyAcc-Y
-tGravityAcc-Y
-tBodyAccJerk-Y
-tBodyGyro-Y
-tBodyGyroJerk-Y
-tBodyAcc-Z
-tGravityAcc-Z
-tBodyAccJerk-Z
-tBodyGyro-Z
-tBodyGyroJerk-Z
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-X
-fBodyAccJerk-X
-fBodyGyro-X
-fBodyAcc-Y
-fBodyAccJerk-Y
-fBodyGyro-Y
-fBodyAcc-Z
-fBodyAccJerk-Z
-fBodyGyro-Z
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+* tBodyAcc-X
+* tGravityAcc-X
+* tBodyAccJerk-X
+* tBodyGyro-X
+* tBodyGyroJerk-X
+* tBodyAcc-Y
+* tGravityAcc-Y
+* tBodyAccJerk-Y
+* tBodyGyro-Y
+* tBodyGyroJerk-Y
+* tBodyAcc-Z
+* tGravityAcc-Z
+* tBodyAccJerk-Z
+* tBodyGyro-Z
+* tBodyGyroJerk-Z
+* tBodyAccMag
+* tGravityAccMag
+* tBodyAccJerkMag
+* tBodyGyroMag
+* tBodyGyroJerkMag
+* fBodyAcc-X
+* fBodyAccJerk-X
+* fBodyGyro-X
+* fBodyAcc-Y
+* fBodyAccJerk-Y
+* fBodyGyro-Y
+* fBodyAcc-Z
+* fBodyAccJerk-Z
+* fBodyGyro-Z
+* fBodyAccMag
+* fBodyAccJerkMag
+* fBodyGyroMag
+* fBodyGyroJerkMag
 
 For each of the 33 signals above, there is an estimated mean() and standard deviation() variable giving us 66 features of interest.
 
@@ -59,74 +60,74 @@ For each of the 66 features, there were multiple measurements on each of 30 subj
 These were reduced so that there is now 1 measure, a mean, on each of the 30 subjects doing each of the six activities.
 This is the list of derived variables in the final data frame. 
 
-*subject
-*activity  
-*tBodyAcc-mean-X-sub-act-mean
-*tBodyAcc-mean-Y-sub-act-mean
-*tBodyAcc-mean-Z-sub-act-mean
-*tBodyAcc-std-X-sub-act-mean
-*tBodyAcc-std-Y-sub-act-mean
-*tBodyAcc-std-Z-sub-act-mean
-*tGravityAcc-mean-X-sub-act-mean
-*tGravityAcc-mean-Y-sub-act-mean
-*tGravityAcc-mean-Z-sub-act-mean
-*tGravityAcc-std-X-sub-act-mean
-*tGravityAcc-std-Y-sub-act-mean
-*tGravityAcc-std-Z-sub-act-mean
-*tBodyAccJerk-mean-X-sub-act-mean
-*tBodyAccJerk-mean-Y-sub-act-mean
-*tBodyAccJerk-mean-Z-sub-act-mean
-*tBodyAccJerk-std-X-sub-act-mean
-*tBodyAccJerk-std-Y-sub-act-mean
-*tBodyAccJerk-std-Z-sub-act-mean
-*tBodyGyro-mean-X-sub-act-mean
-*tBodyGyro-mean-Y-sub-act-mean
-*tBodyGyro-mean-Z-sub-act-mean
-*tBodyGyro-std-X-sub-act-mean
-*tBodyGyro-std-Y-sub-act-mean
-*tBodyGyro-std-Z-sub-act-mean 
-*tBodyGyroJerk-mean-X-sub-act-mean
-*tBodyGyroJerk-mean-Y-sub-act-mean
-*tBodyGyroJerk-mean-Z-sub-act-mean
-*tBodyGyroJerk-std-X-sub-act-mean
-*tBodyGyroJerk-std-Y-sub-act-mean
-*tBodyGyroJerk-std-Z-sub-act-mean 
-*tBodyAccMag-mean-sub-act-mean
-*tBodyAccMag-std-sub-act-mean
-*tGravityAccMag-mean-sub-act-mean
-*tGravityAccMag-std-sub-act-mean
-*tBodyAccJerkMag-mean-sub-act-mean
-*tBodyAccJerkMag-std-sub-act-mean
-*tBodyGyroMag-mean-sub-act-mean
-*tBodyGyroMag-std-sub-act-mean
-*tBodyGyroJerkMag-mean-sub-act-mean
-*tBodyGyroJerkMag-std-sub-act-mean
-*fBodyAcc-mean-X-sub-act-mean
-*fBodyAcc-mean-Y-sub-act-mean
-*fBodyAcc-mean-Z-sub-act-mean
-*fBodyAcc-std-X-sub-act-mean
-*fBodyAcc-std-Y-sub-act-mean
-*fBodyAcc-std-Z-sub-act-mean
-*fBodyAccJerk-mean-X-sub-act-mean
-*fBodyAccJerk-mean-Y-sub-act-mean
-*fBodyAccJerk-mean-Z-sub-act-mean
-*fBodyAccJerk-std-X-sub-act-mean
-*fBodyAccJerk-std-Y-sub-act-mean
-*fBodyAccJerk-std-Z-sub-act-mean
-*fBodyGyro-mean-X-sub-act-mean
-*fBodyGyro-mean-Y-sub-act-mean
-*fBodyGyro-mean-Z-sub-act-mean
-427 fBodyGyro-std-X-sub-act-mean
-428 fBodyGyro-std-Y-sub-act-mean
-429 fBodyGyro-std-Z-sub-act-mean
-503 fBodyAccMag-mean-sub-act-mean
-504 fBodyAccMag-std-sub-act-mean
-516 fBodyBodyAccJerkMag-mean-sub-act-mean
-517 fBodyBodyAccJerkMag-std-sub-act-mean
-529 fBodyBodyGyroMag-mean-sub-act-mean
-530 fBodyBodyGyroMag-std-sub-act-mean
-542 fBodyBodyGyroJerkMag-mean-sub-act-mean
-543 fBodyBodyGyroJerkMag-std-sub-act-mean
+* subject
+* activity  
+* tBodyAcc-mean-X-sub-act-mean
+* tBodyAcc-mean-Y-sub-act-mean
+* tBodyAcc-mean-Z-sub-act-mean
+* tBodyAcc-std-X-sub-act-mean
+* tBodyAcc-std-Y-sub-act-mean
+* tBodyAcc-std-Z-sub-act-mean
+* tGravityAcc-mean-X-sub-act-mean
+* tGravityAcc-mean-Y-sub-act-mean
+* tGravityAcc-mean-Z-sub-act-mean
+* tGravityAcc-std-X-sub-act-mean
+* tGravityAcc-std-Y-sub-act-mean
+* tGravityAcc-std-Z-sub-act-mean
+* tBodyAccJerk-mean-X-sub-act-mean
+* tBodyAccJerk-mean-Y-sub-act-mean
+* tBodyAccJerk-mean-Z-sub-act-mean
+* tBodyAccJerk-std-X-sub-act-mean
+* tBodyAccJerk-std-Y-sub-act-mean
+* tBodyAccJerk-std-Z-sub-act-mean
+* tBodyGyro-mean-X-sub-act-mean
+* tBodyGyro-mean-Y-sub-act-mean
+* tBodyGyro-mean-Z-sub-act-mean
+* tBodyGyro-std-X-sub-act-mean
+* tBodyGyro-std-Y-sub-act-mean
+* tBodyGyro-std-Z-sub-act-mean 
+* tBodyGyroJerk-mean-X-sub-act-mean
+* tBodyGyroJerk-mean-Y-sub-act-mean
+* tBodyGyroJerk-mean-Z-sub-act-mean
+* tBodyGyroJerk-std-X-sub-act-mean
+* tBodyGyroJerk-std-Y-sub-act-mean
+* tBodyGyroJerk-std-Z-sub-act-mean 
+* tBodyAccMag-mean-sub-act-mean
+* tBodyAccMag-std-sub-act-mean
+* tGravityAccMag-mean-sub-act-mean
+* tGravityAccMag-std-sub-act-mean
+* tBodyAccJerkMag-mean-sub-act-mean
+* tBodyAccJerkMag-std-sub-act-mean
+* tBodyGyroMag-mean-sub-act-mean
+* tBodyGyroMag-std-sub-act-mean
+* tBodyGyroJerkMag-mean-sub-act-mean
+* tBodyGyroJerkMag-std-sub-act-mean
+* fBodyAcc-mean-X-sub-act-mean
+* fBodyAcc-mean-Y-sub-act-mean
+* fBodyAcc-mean-Z-sub-act-mean
+* fBodyAcc-std-X-sub-act-mean
+* fBodyAcc-std-Y-sub-act-mean
+* fBodyAcc-std-Z-sub-act-mean
+* fBodyAccJerk-mean-X-sub-act-mean
+* fBodyAccJerk-mean-Y-sub-act-mean
+* fBodyAccJerk-mean-Z-sub-act-mean
+* fBodyAccJerk-std-X-sub-act-mean
+* fBodyAccJerk-std-Y-sub-act-mean
+* fBodyAccJerk-std-Z-sub-act-mean
+* fBodyGyro-mean-X-sub-act-mean
+* fBodyGyro-mean-Y-sub-act-mean
+* fBodyGyro-mean-Z-sub-act-mean
+* fBodyGyro-std-X-sub-act-mean
+* fBodyGyro-std-Y-sub-act-mean
+* fBodyGyro-std-Z-sub-act-mean
+* fBodyAccMag-mean-sub-act-mean
+* fBodyAccMag-std-sub-act-mean
+* fBodyBodyAccJerkMag-mean-sub-act-mean
+* fBodyBodyAccJerkMag-std-sub-act-mean
+* fBodyBodyGyroMag-mean-sub-act-mean
+* fBodyBodyGyroMag-std-sub-act-mean
+* fBodyBodyGyroJerkMag-mean-sub-act-mean
+* fBodyBodyGyroJerkMag-std-sub-act-mean
 
 
 
