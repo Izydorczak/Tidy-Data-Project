@@ -13,10 +13,10 @@ Data is based on an experiment that tests the use of an accelerometer and a gyro
 The following signals are described here, though they are processed further before being included in the final dataset. 
 
 Each signal has these qualities:
-1. t vs. f tells if the variable measures time or frequency
-2. Acc vs. Gyro tells if variable measures accelerometer or gyroscope
-3. Body vs. Gravity tells type of motion for acceleration signal
-4. X,Y,or Z denotes the direction vector
+1.  t vs. f tells if the variable measures time or frequency
+2.  Acc vs. Gyro tells if variable measures accelerometer or gyroscope
+3.  Body vs. Gravity tells type of motion for acceleration signal
+4.  X,Y,or Z denotes the direction vector
 
 
 * tBodyAcc-X
