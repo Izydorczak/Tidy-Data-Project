@@ -57,8 +57,8 @@ For each of the 33 signals above, there is an estimated mean() and standard devi
 
 
 For each of the 66 features, there were multiple measurements on each of 30 subjects doing each of 6 activities.  
-These were reduced so that there is now 1 measure, a mean, on each of the 30 subjects doing each of the six activities.
-This is the list of derived variables in the final data frame. 
+These were reduced so that there is now 1 measure for each feature, a mean of multiple measurements, on each of the 30 subjects doing each of the six activities.
+Below is the list of derived variables in the final data frame. sub-act-mean designates that each variable is the subject by activity mean for the measure.
 
 * subject
 * activity  
