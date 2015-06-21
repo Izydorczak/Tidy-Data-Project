@@ -18,12 +18,13 @@ features is a table with the names of all the variables that were measured. This
 						
 
 All six tables are then combined into one table called all_data by using the cbind and rbind functions. Each row is a vector of variables, or features, taken for one subject performing one activity. 
-Each subject has multiple measures, and therefore rows, on each activity. Columns are the features, followed by a column of subjects, followed by a column of activities.
+Each subject has multiple measures, and therefore rows, on each activity. 
+Columns are the features, followed by a column of subjects, followed by a column of activities.
 
 
 ##Step 2: Extract data that are means and standard deviations. 
 
-A vector called mean_sd_columns is created. This is a vector of positions of the columns that have names ending in "mean" or "standard deviation" along with the positions of the suject and activity columns.
+A vector called mean_sd_columns is created. This is a vector of positions of items in the feature file that have names ending in "mean" or "standard deviation" along with the positions of the subject and activity columns.
 A data frame called new_data is created using the all_data data frame and subsetting only the mean_sd_columns along with the subject and activity columns.
 
 Step 3: Use names in place of numbers for the activities.
@@ -50,7 +51,7 @@ The table_of_means has condensed those measures into 1 row for subject 1 walking
 
 I also renamed the columns in this data frame, now that each piece of data is a newly created mean. I used gsub to remove the () in the column names. I used the paste function to append each column name with sub-act-mean.
 
-Finally, I put the resulting data frame, called table_of_means, into a text file of the same name, but use the write.table function.
+Finally, I put the resulting data frame, called table_of_means, into a text file of the same name, by using the write.table function.
 
 References:
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
